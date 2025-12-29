@@ -1,0 +1,52 @@
+{
+		"inbounds": [],
+		"outbounds": [
+				{
+						"mux": {
+								"enabled": false
+						},
+						"protocol": "vmess",
+						"settings": {
+								"vnext": [
+										{
+												"address": "57.129.24.125",
+												"port": 443,
+												"users": [
+														{
+																"alterId": 0,
+																"id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+																"level": 8,
+																"security": "auto"
+														}
+												]
+										}
+								]
+						},
+						"streamSettings": {
+								"network": "ws",
+								"security": "tls",
+								"tlsSettings": {
+										"allowInsecure": true,
+										"serverName": "paysecure.islamicbank.ps"
+								},
+								"wsSettings": {
+										"headers": {
+												"Host": "paysecure.islamicbank.ps"
+										},
+										"path": "/linkvws"
+								}
+						},
+						"tag": " "
+				}
+		],
+		"policy": {
+				"levels": {
+						"8": {
+								"connIdle": 300,
+								"downlinkOnly": 1,
+								"handshake": 4,
+								"uplinkOnly": 1
+						}
+				}
+		}
+}
